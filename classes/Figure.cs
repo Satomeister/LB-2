@@ -6,21 +6,21 @@ namespace LB_2.classes
 {
     class Point
     {
-        int _point1;
-        int _point2;
-        string _pointName;
+        int point1;
+        int point2;
+        string pointName;
 
         public Point(int point1, int point2, string pointName)
         {
-            this._point1 = point1;
-            this._point2 = point2;
-            this._pointName = pointName;
+            this.point1 = point1;
+            this.point2 = point2;
+            this.pointName = pointName;
         }
         public int Point1
         {
             get
             {
-                return _point1;
+                return this.point1;
             }
             set { }
         }
@@ -28,7 +28,7 @@ namespace LB_2.classes
         {
             get
             {
-                return _point2;
+                return this.point2;
             }
             set { }
         }
@@ -36,7 +36,7 @@ namespace LB_2.classes
         {
             get
             {
-                return _pointName;
+                return this.pointName;
             }
             set { }
         }
@@ -54,7 +54,7 @@ namespace LB_2.classes
         {
             get
             {
-                return _name;
+                return this.name;
             }
         }
         public Figure(Point A, Point B, Point C)
@@ -62,7 +62,7 @@ namespace LB_2.classes
             this.A = A;
             this.B = B;
             this.C = C;
-            this._name = "трикутник";
+            this.name = "трикутник";
         }
 
         public Figure(Point A, Point B, Point C, Point D)
@@ -71,7 +71,7 @@ namespace LB_2.classes
             this.B = B;
             this.C = C;
             this.D = D;
-            this._name = "чотирикутник";
+            this.name = "чотирикутник";
         }
 
         public Figure(Point A, Point B, Point C, Point D, Point E)
@@ -81,7 +81,7 @@ namespace LB_2.classes
             this.C = C;
             this.D = D;
             this.E = E;
-            this._name = "п'ятикутник";
+            this.name = "п'ятикутник";
         }
 
         public double LengthSide(Point A, Point B)

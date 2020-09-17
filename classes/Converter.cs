@@ -6,14 +6,14 @@ namespace LB_2.classes
 {
     class Converter
     {
-        double _usd;
-        double _eur;
-        double _rub;
+        double usd;
+        double eur;
+        double rub;
         public Converter(double usd, double eur, double rub)
         {
-            this._usd = usd;
-            this._eur = eur;
-            this._rub = rub;
+            this.usd = usd;
+            this.eur = eur;
+            this.rub = rub;
         }
 
         public void convertFromUAH()
@@ -21,9 +21,9 @@ namespace LB_2.classes
             Console.WriteLine("Кiлькiсть гривень");
             double uan = Convert.ToDouble(Console.ReadLine());
 
-            double rub = uan * _rub;
-            double eur = uan * _eur;
-            double usd = uan * _usd;
+            double rub = uan * this.rub;
+            double eur = uan * this.eur;
+            double usd = uan * this.usd;
             Console.WriteLine($"{uan} гривень = {rub} рублiв, {eur} євро, {usd} доларiв");
         }
 
@@ -46,21 +46,21 @@ namespace LB_2.classes
                 case 1:
                     /*рублі*/
                     {
-                        uan = num / _rub;
+                        uan = num / this.rub;
                         Console.WriteLine($"{num} рублiв = {uan} гривень");
                     }
                     break;
                 case 2:
                     /*долари*/
                     {
-                        uan = num / _usd;
+                        uan = num / this.usd;
                         Console.WriteLine($"{num} долларiв = {uan} гривень");
                     }
                     break;
                 case 3:
                     /*євро*/
                     {
-                        uan = num / _eur;
+                        uan = num / this.eur;
                         Console.WriteLine($"{num} євро = {uan} гривень");
                     }
                     break;
